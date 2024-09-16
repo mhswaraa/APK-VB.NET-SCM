@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F4761265-C3AA-4C30-9D27-579561AA9B3E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WinApk1.My.MyApplication</StartupObject>
+    <RootNamespace>WinApk1</RootNamespace>
+    <AssemblyName>WinApk1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WinApk1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WinApk1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Text</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSetCustomer.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetCustomer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetCustomer.vb">
+      <DependentUpon>DataSetCustomer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCustomer.Designer.vb">
+      <DependentUpon>FormCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInputKain.Designer.vb">
+      <DependentUpon>FormInputKain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormInputKain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInputProduk.Designer.vb">
+      <DependentUpon>FormInputProduk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormInputProduk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formListData.Designer.vb">
+      <DependentUpon>formListData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formListData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.vb">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuUtama.Designer.vb">
+      <DependentUpon>FormMenuUtama.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenuUtama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportCustomer.Designer.vb">
+      <DependentUpon>FormReportCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormReportCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportKain.Designer.vb">
+      <DependentUpon>FormReportKain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormReportKain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportListData.Designer.vb">
+      <DependentUpon>FormReportListData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormReportListData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportProduk.Designer.vb">
+      <DependentUpon>FormReportProduk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormReportProduk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportTransaksi.Designer.vb">
+      <DependentUpon>FormReportTransaksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormReportTransaksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTransaksi.Designer.vb">
+      <DependentUpon>FormTransaksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTransaksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormCustomer.resx">
+      <DependentUpon>FormCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputKain.resx">
+      <DependentUpon>FormInputKain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputProduk.resx">
+      <DependentUpon>FormInputProduk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formListData.resx">
+      <DependentUpon>formListData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuUtama.resx">
+      <DependentUpon>FormMenuUtama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReportCustomer.resx">
+      <DependentUpon>FormReportCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReportKain.resx">
+      <DependentUpon>FormReportKain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReportListData.resx">
+      <DependentUpon>FormReportListData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReportProduk.resx">
+      <DependentUpon>FormReportProduk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReportTransaksi.resx">
+      <DependentUpon>FormReportTransaksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTransaksi.resx">
+      <DependentUpon>FormTransaksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="Report4.rdlc" />
+    <EmbeddedResource Include="Report5.rdlc" />
+    <EmbeddedResource Include="Report6.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSetCustomer.xsc">
+      <DependentUpon>DataSetCustomer.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetCustomer.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetCustomer.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetCustomer.xss">
+      <DependentUpon>DataSetCustomer.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpaperflare.com_wallpaper %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cuplikan layar 2023-01-24 211458.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
